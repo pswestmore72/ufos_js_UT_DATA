@@ -3,7 +3,7 @@
 ## Resources
 
 - Data Source:
-  - [Data (json)](./statics/js/data.json)
+  - [Data (json)](./statics/js/data.js)
 
 - Software:
   - NnodeJS 14.x
