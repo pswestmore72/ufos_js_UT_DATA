@@ -65,8 +65,8 @@ function filterTable() {
   // matches the filter values
   filteredData = filteredData
     .filter((el) => {
-      if (filter.date) {
-        if (el.datetime === filter.date) {
+      if (filter.datetime) {
+        if (el.datetime === filter.datetime) {
           return el;
         } else return;
       }
@@ -74,7 +74,7 @@ function filterTable() {
     })
     .filter((el) => {
       if (filter.city) {
-        if (el.city === filter.city) {
+        if (el.city === filter.city.toLowerCase()) {
           return el;
         } else return;
       }
@@ -82,7 +82,7 @@ function filterTable() {
     })
     .filter((el) => {
       if (filter.state) {
-        if (el.state === filter.state) {
+        if (el.state === filter.state.toLowerCase()) {
           return el;
         } else return;
       }
@@ -90,7 +90,7 @@ function filterTable() {
     })
     .filter((el) => {
       if (filter.country) {
-        if (el.country === filter.country) {
+        if (el.country === filter.country.toLowerCase()) {
           return el;
         } else return;
       }
@@ -98,7 +98,7 @@ function filterTable() {
     })
     .filter((el) => {
       if (filter.shape) {
-        if (el.shape === filter.shape) {
+        if (el.shape === filter.shape.toLowerCase()) {
           return el;
         } else return;
       }
